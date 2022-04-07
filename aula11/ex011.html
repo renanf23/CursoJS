@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    Digite que país você nasceu: <input type="text" id="nascimento">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        
+        
+        function clicar() {
+            var nas = window.document.getElementById('nascimento')
+            var na = String(nas.value)
+            var n = na.toLowerCase()
+
+            if (n == 'brasil') {
+                window.document.getElementById('res').innerHTML = '<p>Você é brasileiro! Meus parabéns!</p>'
+
+            } else{
+                window.document.getElementById('res').innerHTML = `<p>Você é estrangeiro! Que Legal!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
