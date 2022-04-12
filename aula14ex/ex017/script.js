@@ -6,8 +6,10 @@ function clicar(){
     var v = 1
 
     if(num.value.length == 0){
+        //Caso 1: campo numero vazio
         alert('Por favor, digite um número!')
     } else if(ate.value.length == 0 && passo.value.length == 0){
+        // Caso 2: campo ate e campo passo vazios
         alert('Passo e até vazios considerando passo 1 e até 10')
         var n = Number(num.value)
         var c = 0 
@@ -20,6 +22,7 @@ function clicar(){
             c++
         }
     }  else if(ate.value.length == 0){
+        // Caso 3: campo ate vazio
         alert('Até vazio, considerando até 10')
         let p = Number(passo.value)
         var n = Number(num.value)
@@ -40,6 +43,7 @@ function clicar(){
         }
 
     }  else if(passo.value.length == 0 ){
+        // Caso 4 : campo passo vazio
         alert('Passo vazio, considerando passo 1')
         let n = Number(num.value)
         let a = Number(ate.value)
@@ -59,6 +63,7 @@ function clicar(){
         }
 
     } else{
+        //Caso 5 : Todos os campos preenchidos
         let n = Number(num.value)
         let a = Number(ate.value)
         let p = Number(passo.value)
