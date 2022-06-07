@@ -1,0 +1,6 @@
+console.log('###Seja bem vindo ao Hortifruti 1.0####')
+
+console.log('###Menu###')
+var prompt = require('prompt-sync')();
+let menu = prompt("Digite 1 para ver o catálogo: ");
+console.log(menu)

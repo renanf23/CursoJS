@@ -1,4 +1,4 @@
-let num = [3,5,40,7]
+let num = [3,5,40,7,]
 num.push(2)
 num.sort((a, b) => a - b);
 
